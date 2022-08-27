@@ -277,6 +277,25 @@ nav .nav-bar ul li a:hover {
     height: 150px;
     resize: vertical;
 }
+/* 
+--------------------404 page--------
+*/
+.container {
+    width: 100%;
+}
+
+.container .row {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    background-color: #237db5;
+}
+
+.container .row .text-center {
+    text-align: center;
+    padding: 100px;
+}
 /* ---- */
 .footer-distributed {
     background: rgb(183, 183, 183);
