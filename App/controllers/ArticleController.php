@@ -20,7 +20,7 @@ class ArticleController{
 			return 'error server';
 		}
 	}
-    
+
 	public function getAllComment(){
 		if ($_SERVER["REQUEST_METHOD"] == "POST"){
 			if(isset($_POST['id'])){
@@ -50,6 +50,44 @@ class ArticleController{
 			// }else{
 			// 	echo $result;
 			// }
+		}
+	}
+    
+	public function addArticle(){
+		if(isset($_POST['submit'])){
+			if (!empty($_FILES['imgs'])) {
+
+            
+            $fileName=$_FILES['imgs']['name'];
+            $fileTmpname=$_FILES['imgs']['tmp_name'];
+            $fileError=$_FILES['imgs']['error'];
+
+            $fileExt=explode('.',$fileName);
+            $fileActualExt=strtolower(end($fileExt));
+            $allowed=array('jpg','jpeg','png');
+            	if(in_array($fileActualExt,$allowed)){            
+            	    if($fileError === 0){
+            	        $fileNameNew=uniqid('',true).".".$fileActualExt;
+            	        $fileDestintion="App/views/images/". $fileNameNew;
+            	        move_uploaded_file($fileTmpname,$fileDestintion);
+						$data = array(
+							'title' => $_POST['title'],
+							'Content' => $_POST['Content'],
+							'imgs' => $fileNameNew
+						);
+						$result = Article::addArticle($data);
+
+            	    }else{
+            	        return "on a une erreur de chargement de votre image !!";
+            	    }
+            	}
+        
+    		}else{
+				return "empty imgs";
+			}
+
+		}else{
+			return "error POST";
 		}
 	}
 
