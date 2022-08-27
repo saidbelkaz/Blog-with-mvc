@@ -2,6 +2,6 @@ Options All -Indexes
 
 RewriteEngine On
 
-RewriteBase /projet/Blog/
+RewriteBase /projet/Blog-V1/
 
 RewriteRule ^([-a-zA-Z0-9]+)$ index.php?page=$1
