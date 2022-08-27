@@ -18,7 +18,7 @@ class Article {
 		$stmt->close();
 		$stmt = null;
 	}
-    
+
 	static public function getAllComment($data){
 		$id = $data;
 		$stmt = DB::connect()->prepare("SELECT * FROM comment WHERE id_article=$id ORDER BY id_article DESC");
@@ -42,6 +42,18 @@ class Article {
 
 		$stmt->close();
 		$stmt = null;
+	}
+
+	static public function addArticle($data){
+		$stmt = DB::connect()->prepare("INSERT INTO `article`(`titles`, `details`, `images`) 
+			VALUES (:title,:Content,:imgs)");
+		$stmt->bindParam(':title',$data['title']);
+		$stmt->bindParam(':Content',$data['Content']);
+		$stmt->bindParam(':imgs',$data['imgs']);
+		if($stmt->execute()){
+			header('location: blog');
+		}
+
 	}
 
 }
