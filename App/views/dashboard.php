@@ -31,10 +31,6 @@
         $data = new ArticleController();
         $data->delete_user();
     }
-    if (isset($_POST['edit'])) {
-        $data = new ArticleController();
-        $GLOBALS['edite']=$data->getUserEdite();
-    }
 
 
 ?>
