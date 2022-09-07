@@ -6,6 +6,10 @@
     font-family: Open Sans;
 }
 
+body {
+    background-color: #eee;
+}
+
 nav {
     background-color: #fff;
     height: 15vh;
@@ -50,6 +54,12 @@ nav .nav-bar ul li a:hover {
     border-radius: 10px;
 }
 
+.info-nav {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
+
 .butt {
     text-decoration: none;
     color: aliceblue;
@@ -69,7 +79,7 @@ nav .nav-bar ul li a:hover {
 }
 
 .content .bg-imags img {
-    margin-top: 95px;
+    margin-top: 10px;
     width: 100%;
     height: 300px;
     transition: 0.5ms;
@@ -228,75 +238,12 @@ nav .nav-bar ul li a:hover {
     width: 50px;
     margin-right: 10px;
 }
-/* -- */
-.addArticle {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-}
 
-.addArticle form table {
-    margin-top: 40px;
-    width: 100%;
-    box-shadow: 2px 10px 50px 1px rgb(176, 174, 174);
-    padding: 50px 50px 50px 120px;
-    border-radius: 20px;
-}
 
-.addArticle form table tr td {
-    padding: 10px;
-    text-align: left;
-}
-
-.addArticle form table tr td label {
-    font-size: 20px;
-    font-weight: 600;
-    font-family: monospace;
-    color: rgb(103, 102, 102);
-}
-
-.addArticle form table tr td input {
-    width: 100%;
-    height: 30px;
-    padding: 5px;
-    font-size: 20px;
-}
-
-.addArticle form table tr td .sub {
-    width: 100%;
-    height: 50px;
-    border: none;
-    background-color: rgb(144, 166, 245);
-}
-
-.addArticle form table tr td textarea {
-    padding: 10px;
-    font-size: 20px;
-    width: 100%;
-    height: 150px;
-    resize: vertical;
-}
-/* 
---------------------404 page--------
+/* --------------
+----------------------------------
 */
-.container {
-    width: 100%;
-}
 
-.container .row {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    margin-left: 30vh;
-    margin-right: 30vh;
-    background-color: #237db5;
-}
-
-.container .row .text-center {
-    text-align: center;
-    padding: 100px;
-}
-/* ---- */
 .footer-distributed {
     background: rgb(183, 183, 183);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -401,4 +348,567 @@ nav .nav-bar ul li a:hover {
 .footer-distributed .footer-links .link-1:before {
     content: none;
 }
-/* ----------------------------- */
+
+
+/* 
+--------------------404 page--------
+*/
+.container {
+    width: 100%;
+}
+
+.container .row {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    background-color: #237db5;
+}
+
+.container .row .text-center {
+    text-align: center;
+    padding: 100px;
+}
+
+/* 
+----------------------
+-   Administrateur   -
+----------------------
+*/
+
+.dashbord-user {
+    display: flex;
+    margin: 100px 0;
+}
+
+.nav-left {
+    position: fixed;
+    left: 0;
+    width: 50vh;
+    height: 100%;
+    background-color: #eee;
+    padding: 50px 0;
+}
+
+.nav-left ul li {
+    justify-content: space-between;
+    padding: 30px 10px;
+    text-decoration: none;
+    color: #000000;
+    padding: 20px;
+    font-weight: 600;
+}
+
+.nav-left ul li:hover {
+    cursor: pointer;
+    background-color: #626262;
+}
+
+.nav-left form input {
+    margin-top: 45vh;
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    border: none;
+    background-color: #237db5;
+    cursor: pointer;
+}
+
+.nav-ac {
+    background-color: #626262;
+}
+
+/* 
+----------
+---PROFILE users
+---------
+*/
+.content-right-profile {
+    margin-left: 80vh;
+    margin-top: 5vh;
+}
+
+.content-right-profile .imgs-name {
+    display: flex;
+    align-items: center;
+}
+
+.content-right-profile .imgs-name p {
+    padding: 50px;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.content-right-profile .imgs-name img {
+    width: 200px;
+    border-radius: 50px;
+}
+
+/* .content-right-profile form table{
+
+} */
+.content-right-profile form table tr td {
+    padding: 20px;
+}
+
+.content-right-profile form table tr td input {
+    width: 150%;
+    height: 15px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid blue;
+    background-color: #eee;
+}
+
+.content-right-profile form table tr td .file {
+    border: none;
+    background-color: none;
+}
+
+.content-right-profile form table tr td .up {
+    width: 150%;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background-color: rgb(101, 186, 101);
+    color: #fff;
+}
+
+#EditePic {
+    background-color: rgb(101, 186, 101);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* 
+----------------------
+- Article management user-
+----------------------
+*/
+.content-right-article {
+    margin-left: 50vh;
+    margin-top: 5vh;
+}
+
+.content-right-article .title-ajou {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content-right-article .title-ajou a i {
+    font-size: 25px;
+    color: rgb(0, 102, 255);
+    cursor: pointer;
+}
+
+.content-right-article .show-article table {
+    width: 150vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.content-right-article .show-article table thead {
+    background-color: #626262;
+    font-weight: 600;
+    color: #fff;
+}
+
+.content-right-article .show-article table tr td {
+    padding: 5px 0;
+}
+
+.content-right-article .show-article table tbody tr td {
+    border-bottom: 1px solid #8b8b8b;
+}
+
+.content-right-article .show-article table tbody tr .btn-trash {
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.content-right-article .show-article table tbody tr .wait {
+    background-color: rgb(255, 228, 187);
+    color: rgb(255, 119, 0);
+}
+
+.content-right-article .show-article table tbody tr .accepted {
+    background-color: rgb(190, 255, 187);
+    color: green;
+}
+
+.content-right-article .show-article table tbody tr .not {
+    background-color: rgb(255, 187, 187);
+    color: red;
+}
+
+/* 
+------------
+addArticle
+------------
+*/
+
+.addArticle {
+    display: none;
+    width: 80%;
+    margin-bottom: 50px;
+    position: absolute;
+    top: 15vh;
+}
+
+.addArticle form table {
+    width: 80%;
+    box-shadow: 2px 10px 50px 400px rgba(210, 210, 210, 0.541);
+    padding: 50px 50px 50px 120px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.addArticle form table tr td i {
+    font-size: 30px;
+    color: #237db5;
+    cursor: pointer;
+}
+
+.addArticle form table tr td {
+    padding: 10px;
+    text-align: left;
+}
+
+.addArticle form table tr td label {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: monospace;
+    color: rgb(103, 102, 102);
+}
+
+.addArticle form table tr td input {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.addArticle form table tr td .sub {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: rgb(144, 166, 245);
+}
+
+.addArticle form table tr td textarea {
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    height: 150px;
+    resize: vertical;
+}
+
+/* 
+----------
+- LOGIN PAGE
+-----------
+*/
+.login {
+    width: 100%;
+}
+
+.login .signin form table {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30vh;
+    box-shadow: 2px 10px 50px 30px rgb(205, 205, 205);
+    background-color: white;
+    border-radius: 40px 0 40px 0;
+    padding: 30px;
+}
+
+.login .signin form table tr td {
+    padding: 15px;
+}
+
+.login .signin form table tr .imgs {
+    border: none;
+    background-color: white;
+}
+
+.login .signin form table tr .log {
+    width: 100%;
+    background-color: #237db5;
+    cursor: pointer;
+    border: none;
+}
+
+.login .signin form table input {
+    width: 95%;
+    padding: 5px;
+    background-color: #eee;
+    border: none;
+    border-bottom: 2px solid green;
+}
+
+/* 
+--------------------------
+- dashbord Global
+--------------------------
+*/
+.dashbord {
+    display: flex;
+}
+
+.dashbord .nav-left {
+    position: fixed;
+    left: 0;
+    width: 40vh;
+    height: 100%;
+    background-color: #eee;
+    padding: 50px 0;
+    border-right: 1px solid rgb(114, 114, 114);
+}
+
+.dashbord .nav-left ul li {
+    justify-content: space-between;
+    padding: 30px 10px;
+    text-decoration: none;
+    color: #000000;
+    padding: 20px;
+    font-weight: 600;
+}
+
+.dashbord .nav-left ul li:hover {
+    background-color: #626262;
+    cursor: pointer;
+}
+
+.dashbord .nav-left .nav-act {
+    background-color: #626262;
+}
+
+/* 
+-----------------
+- article management
+-------------------
+*/
+.article-manag {
+    margin-left: 50vh;
+    margin-top: 5vh;
+    display: none;
+}
+
+
+.article-manag .show-article table {
+    width: 145vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.article-manag .show-article table thead {
+    background-color: #626262;
+    font-weight: 600;
+    color: #fff;
+}
+
+.article-manag .show-article table tr td {
+    padding: 5px 0;
+}
+
+.article-manag .show-article table thead tr .action {
+    width: 25%;
+}
+
+.article-manag .show-article table tbody tr td {
+    border-bottom: 1px solid #8b8b8b;
+}
+
+.article-manag .show-article table tbody tr .btn-trash {
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.article-manag .show-article table tbody tr .btn-accept {
+    background-color: rgb(12, 169, 12);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.article-manag .show-article table tbody tr .btn-times {
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.article-manag .show-article table tbody tr .wait {
+    background-color: rgb(255, 228, 187);
+    color: rgb(255, 119, 0);
+}
+
+.article-manag .show-article table tbody tr .accepted {
+    background-color: rgb(190, 255, 187);
+    color: green;
+}
+
+.article-manag .show-article table tbody tr .not {
+    background-color: rgb(255, 187, 187);
+    color: red;
+}
+
+/* 
+----------------------
+- users management dashbord
+-----------------------
+*/
+.users-manag {
+    margin-left: 50vh;
+    margin-top: 5vh;
+}
+
+.users-manag form {
+    display: none;
+}
+
+#h1 {
+    cursor: pointer;
+    color: blue;
+}
+
+.users-manag form table tr td {
+    padding: 20px;
+}
+
+.users-manag form table tr td input {
+    width: 100%;
+    height: 15px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid blue;
+    background-color: #eee;
+}
+
+.users-manag form table tr td .file {
+    border: none;
+    background-color: none;
+}
+
+.users-manag form table tr td .up {
+    width: 100%;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background-color: rgb(101, 186, 101);
+    color: #fff;
+}
+
+.users-manag form table tr td select {
+    width: 100%;
+    height: 30px;
+    background-color: #eee;
+}
+
+
+.AllUsre .show-users h1 {
+    color: #237db5;
+}
+
+.AllUsre .show-users table {
+    width: 150vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.AllUsre .show-users table thead tr .action {
+    width: 25%;
+}
+
+.AllUsre .show-users table thead {
+    background-color: #626262;
+    font-weight: 600;
+    color: #fff;
+}
+
+.AllUsre .show-users table tr td {
+    padding: 5px 0;
+}
+
+.AllUsre .show-users table tbody tr td {
+    border-bottom: 1px solid #8b8b8b;
+}
+
+.AllUsre .show-users table tbody tr .btn-trash {
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.AllUsre .show-users table tbody tr .btn-edit {
+    background-color: rgb(255, 119, 0);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* edit   */
+
+.edit-user {
+    margin-top: 5vh;
+}
+
+.edit-user form {
+    display: none;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    position: absolute;
+    top: 15vh;
+    box-shadow: 2px 10px 50px 400px rgba(210, 210, 210, 0.541);
+    padding: 50px 50px 50px 120px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.edit-user form table tr td {
+    padding: 20px;
+}
+
+.edit-user form table tr td input {
+    width: 100%;
+    height: 15px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid blue;
+    background-color: #eee;
+}
+
+.edit-user form table tr td .file {
+    border: none;
+    background-color: none;
+}
+
+.edit-user form table tr td .up {
+    width: 100%;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background-color: rgb(101, 186, 101);
+    color: #fff;
+}
+
+.edit-user form table tr td select {
+    width: 100%;
+    height: 30px;
+    background-color: #eee;
+}

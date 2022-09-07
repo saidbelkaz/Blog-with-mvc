@@ -5,31 +5,27 @@ require_once './App/controllers/HomeController.php';
 
 $home = new HomeController();
 
-$pages = ['blog','details','addArticle'];
+$pages = ['blog','details',"administrator-users","dashboard","login","signup"];
 
-// if(isset($_SESSION['logged']) && $_SESSION['logged'] === true){
-
-if(isset($_GET['page'])){
-	if(in_array($_GET['page'],$pages)){
-		$page = $_GET['page'];
-		$home->index($page);
+if(isset($_SESSION['id'])){
+	// $home->index('blog');
+	if(isset($_GET['page'])){
+		if(in_array($_GET['page'],$pages)){
+			$page = $_GET['page'];
+			$home->index($page);
+		}else{
+			include('App/views/includes/404.php');
+		}
 	}else{
-		include('App/views/includes/404.php');
+		$home->index('blog');
 	}
+
+	
+}else if(isset($_GET['page']) && $_GET['page']==="signup"){
+	$home->index('signup');
+}else if(isset($_GET['page']) && $_GET['page']==="dashboard"){
+	$home->index('dashboard');
 }else{
-	$home->index('blog');
+	$home->index('login');
 }
-
-
 require_once './App/views/includes/footer.php';
-
-
-// }else if(isset($_GET['page']) && $_GET['page'] === 'register'){
-// 	$home->index('register');
-// }else{
-// 	$home->index('login');
-// }
-
-
-
-?>
