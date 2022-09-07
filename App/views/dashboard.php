@@ -32,7 +32,6 @@
         $data->delete_user();
     }
 
-
 ?>
 <div class="dashbord">
     <div class="nav-left">
