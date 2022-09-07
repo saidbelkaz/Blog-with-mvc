@@ -1,7 +1,13 @@
 <?php 
-session_start();
 	$data = new ArticleController();
     $resultat=$data->getAllArticle();
+    if (isset($_POST['logout'])) {
+        $data = new ArticleController();
+        $data->logout();
+    }
+    $data2 = new ArticleController();
+    $res=$data2->getInfoUser();
+
 
 ?>
 
@@ -10,10 +16,12 @@ session_start();
         <a href="#"><img src="<?php echo BASE_URL;?>App/views/images/Blog.jpg" alt="logo"></a>
         <ul>
             <li><a href="<?php echo BASE_URL ?>blog" class="active">Blog</a></li>
+            <li><a href="<?php echo BASE_URL ?>administrator-users">administrator</a></li>
         </ul>
-        <!-- <a href="#" class="butt">Sign in</a> -->
+        <a href="<?php echo BASE_URL ?>administrator-users" class="info-nav"><?php echo $res['fname']." ".$res['lname']." ";?><i class="fa fa-user" aria-hidden="true"></i></a>
     </div>
 </nav>
+
 <div class="content">
     <div class="bg-imags">
         <img src="<?php echo BASE_URL;?>App/views/images/blog_images.jpg" alt="bg" id="bg-imgs">

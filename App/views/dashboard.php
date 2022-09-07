@@ -208,20 +208,20 @@
                         <table>
                             <tr>
                                 <td><label for="full_name">Frist name :</label></td>
-                                <td><input type="text" name="fname" value="<php echo $edite['fname']?>"  required></td>
+                                <td><input type="text" name="fname" value="<?php echo $edite['fname']?>"  required></td>
                             </tr>
                             <tr>
                                 <td><label for="full_name">Last name :</label></td>
-                                <td><input type="text" name="lname" value="<php echo $edite['lname']?>" required></td>
+                                <td><input type="text" name="lname" value="<?php echo $edite['lname']?>" required></td>
                             </tr>
                             <tr>
                                 <td><label for="email">Email :</label></td>
-                                <td><input type="email" name="email" value="<php echo $edite['email_users']?>"  required></td>
+                                <td><input type="email" name="email" value="<?php echo $edite['email_users']?>"  required></td>
                             </tr>
                             <tr>
                                 <td><label for="rights">Rights :</label></td>
                                 <td><select name="rights" >
-                                    <option value="<php echo $edite['actions'] ?>"  selected disabled><php echo $edite['actions'] ?></option>
+                                    <option value="<?php echo $edite['actions'] ?>"  selected disabled><?php echo $edite['actions'] ?></option>
                                     <option value="blogger">blogger</option>
                                     <option value="Visitor">Visitor</option>
                                 </select></td>

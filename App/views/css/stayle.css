@@ -1,15 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
-
-* {
+*{
     margin: 0;
     padding: 0;
     font-family: Open Sans;
 }
-
-body {
+body{
     background-color: #eee;
 }
-
 nav {
     background-color: #fff;
     height: 15vh;
@@ -18,49 +15,41 @@ nav {
     top: 0;
     width: 100%;
 }
-
-.nav-bar a img {
+.nav-bar a img{
     margin-top: 10px;
     width: 50px;
 }
-
-.nav-bar {
+.nav-bar{
     align-items: center;
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
 }
-
-nav .nav-bar ul {
+nav .nav-bar ul{
     display: flex;
     list-style-type: none;
 }
-
-nav .nav-bar ul li {
+nav .nav-bar ul li{
     margin-top: 30px;
     margin-left: 40px;
 }
-
-nav .nav-bar ul li a {
+nav .nav-bar ul li a{
     cursor: pointer;
     text-decoration: none;
     color: rgb(0, 0, 0);
     padding: 10px;
 }
-
 nav .nav-bar ul li a:hover {
     background-color: rgba(223, 221, 221, 0.715);
     border: 2px solid rgb(15, 155, 66);
     border-radius: 10px;
 }
-
-.info-nav {
+.info-nav{
     text-decoration: none;
     font-size: 20px;
     color: #000;
 }
-
-.butt {
+.butt{
     text-decoration: none;
     color: aliceblue;
     background-color: green;
@@ -68,27 +57,22 @@ nav .nav-bar ul li a:hover {
     border-radius: 10px;
     transition: 0.5s;
 }
-
 .butt:hover {
     background-color: rgb(7, 187, 7);
     border: 2px solid black;
 }
-
-.active {
+.active{
     border-bottom: 2px solid greenyellow;
 }
-
-.content .bg-imags img {
+.content .bg-imags img{
     margin-top: 10px;
     width: 100%;
     height: 300px;
     transition: 0.5ms;
 }
-
-.Articles {
+.Articles{
     width: 100%;
 }
-
 .nav {
     margin-top: -5px;
     margin-left: auto;
@@ -99,8 +83,7 @@ nav .nav-bar ul li a:hover {
     position: sticky;
     top: 90px;
 }
-
-.nav h1 {
+.nav h1{
     text-align: center;
     color: black;
     font-family: monospace;
@@ -108,18 +91,15 @@ nav .nav-bar ul li a:hover {
     font-size: 35px;
     letter-spacing: 2px;
 }
-
-.Articles .cards form {
+.Articles .cards form{
     display: inline;
 }
-
-.Articles .cards {
+.Articles .cards{
     margin-left: 50px;
     margin-top: 20px;
     margin-bottom: 50px;
 }
-
-.Articles .card {
+.Articles .card{
     display: inline-block;
     max-width: 100%;
     padding: 40px;
@@ -128,18 +108,15 @@ nav .nav-bar ul li a:hover {
     margin-bottom: 20px;
     box-shadow: 1px 1px 10px rgb(171, 171, 171);
 }
-
-.Articles .card img {
+.Articles .card img{
     width: 150px;
 }
-
-.Articles .card .info h1 {
+.Articles .card .info h1{
     border-top: 2px solid black;
     text-align: center;
     color: #000;
     max-width: fit-content;
 }
-
 .Articles .cards .card input {
     margin: 20px 0;
     padding: 5px;
@@ -150,40 +127,35 @@ nav .nav-bar ul li a:hover {
     background-color: #237db5;
 }
 
-.Details {
+.Details{
     width: 50%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20vh;
     margin-bottom: 20%;
 }
-
-.Details img {
+.Details img{
     width: 50%;
     margin: 30px 0 30px 150px;
 }
-
-.Details .title h1 {
+.Details .title h1{
     font-size: 35px;
     font-weight: 600;
     color: #237db5;
     text-align: center;
 }
-
-.Details .info p {
+.Details .info p{
     font-size: 25px;
     color: #626262;
     text-align: center;
     margin-bottom: 20%;
 }
-
-.hrr {
+.hrr{
     width: 100%;
     height: 5px;
     background-color: #000000;
 }
-
-.hr1 {
+.hr1{
     width: 100%;
     height: 1px;
     margin: 20px 0;
@@ -198,11 +170,10 @@ nav .nav-bar ul li a:hover {
 
 .comment form table tr td {
     padding: 10px;
-    text-align: center;
+    text-align:center;
     font-size: 20px;
     font-weight: 600;
 }
-
 .comment form table tr td input {
     width: 100%;
     height: 30px;
@@ -224,17 +195,14 @@ nav .nav-bar ul li a:hover {
     height: 150px;
     resize: vertical;
 }
-
-.inf {
+.inf{
     display: block;
 }
-
-.info-users {
+.info-users{
     display: flex;
     align-items: center;
 }
-
-.info-users img {
+.info-users img{
     width: 50px;
     margin-right: 10px;
 }
@@ -269,7 +237,7 @@ nav .nav-bar ul li a:hover {
 
 /* The company logo */
 
-.footer-distributed img {
+.footer-distributed img{
     width: 100px;
 }
 
@@ -356,16 +324,14 @@ nav .nav-bar ul li a:hover {
 .container {
     width: 100%;
 }
-
-.container .row {
+.container .row{
     margin-top: 10vh;
     margin-bottom: 10vh;
     margin-left: 30vh;
     margin-right: 30vh;
     background-color: #237db5;
 }
-
-.container .row .text-center {
+.container .row .text-center{
     text-align: center;
     padding: 100px;
 }
@@ -376,21 +342,19 @@ nav .nav-bar ul li a:hover {
 ----------------------
 */
 
-.dashbord-user {
+.dashbord-user{
     display: flex;
     margin: 100px 0;
 }
-
-.nav-left {
+.nav-left{
     position: fixed;
     left: 0;
     width: 50vh;
     height: 100%;
     background-color: #eee;
-    padding: 50px 0;
+    padding:50px 0;
 }
-
-.nav-left ul li {
+.nav-left ul li{
     justify-content: space-between;
     padding: 30px 10px;
     text-decoration: none;
@@ -399,12 +363,11 @@ nav .nav-bar ul li a:hover {
     font-weight: 600;
 }
 
-.nav-left ul li:hover {
+.nav-left ul li:hover{
     cursor: pointer;
     background-color: #626262;
 }
-
-.nav-left form input {
+.nav-left form input{
     margin-top: 45vh;
     width: 100%;
     height: 35px;
@@ -413,33 +376,28 @@ nav .nav-bar ul li a:hover {
     background-color: #237db5;
     cursor: pointer;
 }
-
-.nav-ac {
+.nav-ac{
     background-color: #626262;
 }
-
 /* 
 ----------
 ---PROFILE users
 ---------
 */
-.content-right-profile {
+.content-right-profile{
     margin-left: 80vh;
     margin-top: 5vh;
-}
-
-.content-right-profile .imgs-name {
+} 
+.content-right-profile .imgs-name{
     display: flex;
     align-items: center;
 }
-
-.content-right-profile .imgs-name p {
+.content-right-profile .imgs-name p{
     padding: 50px;
     font-size: 35px;
     font-weight: 600;
 }
-
-.content-right-profile .imgs-name img {
+.content-right-profile .imgs-name img{
     width: 200px;
     border-radius: 50px;
 }
@@ -450,23 +408,20 @@ nav .nav-bar ul li a:hover {
 .content-right-profile form table tr td {
     padding: 20px;
 }
-
-.content-right-profile form table tr td input {
+.content-right-profile form table tr td input{
     width: 150%;
     height: 15px;
     padding: 10px;
     font-size: 15px;
     border: none;
-    border-bottom: 2px solid blue;
+    border-bottom:2px solid blue ;
     background-color: #eee;
 }
-
-.content-right-profile form table tr td .file {
+.content-right-profile form table tr td .file{
     border: none;
     background-color: none;
 }
-
-.content-right-profile form table tr td .up {
+.content-right-profile form table tr td .up{
     width: 150%;
     height: 30px;
     padding: 0;
@@ -474,8 +429,7 @@ nav .nav-bar ul li a:hover {
     background-color: rgb(101, 186, 101);
     color: #fff;
 }
-
-#EditePic {
+#EditePic{
     background-color: rgb(101, 186, 101);
     padding: 10px;
     border-radius: 10px;
@@ -484,67 +438,57 @@ nav .nav-bar ul li a:hover {
     border: none;
     cursor: pointer;
 }
-
 /* 
 ----------------------
 - Article management user-
 ----------------------
 */
-.content-right-article {
+.content-right-article{
     margin-left: 50vh;
     margin-top: 5vh;
 }
-
-.content-right-article .title-ajou {
+.content-right-article .title-ajou{
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-
-.content-right-article .title-ajou a i {
+.content-right-article .title-ajou a i{
     font-size: 25px;
     color: rgb(0, 102, 255);
     cursor: pointer;
 }
 
-.content-right-article .show-article table {
+.content-right-article .show-article table{
     width: 150vh;
     text-align: center;
     padding: 20px;
 }
-
-.content-right-article .show-article table thead {
+.content-right-article .show-article table thead{
     background-color: #626262;
     font-weight: 600;
     color: #fff;
 }
-
-.content-right-article .show-article table tr td {
+.content-right-article .show-article table tr td{
     padding: 5px 0;
 }
-
-.content-right-article .show-article table tbody tr td {
+.content-right-article .show-article table tbody tr td{
     border-bottom: 1px solid #8b8b8b;
 }
-
-.content-right-article .show-article table tbody tr .btn-trash {
+.content-right-article .show-article table tbody tr .btn-trash{
     background-color: red;
     border: none;
     cursor: pointer;
     padding: 10px;
 }
-
-.content-right-article .show-article table tbody tr .wait {
+.content-right-article .show-article table tbody tr .wait{
     background-color: rgb(255, 228, 187);
     color: rgb(255, 119, 0);
 }
-
-.content-right-article .show-article table tbody tr .accepted {
+.content-right-article .show-article table tbody tr .accepted{
     background-color: rgb(190, 255, 187);
     color: green;
 }
-
-.content-right-article .show-article table tbody tr .not {
+.content-right-article .show-article table tbody tr .not{
     background-color: rgb(255, 187, 187);
     color: red;
 }
@@ -570,13 +514,11 @@ addArticle
     border-radius: 20px;
     background-color: #fff;
 }
-
-.addArticle form table tr td i {
+.addArticle form table tr td i{
     font-size: 30px;
     color: #237db5;
     cursor: pointer;
 }
-
 .addArticle form table tr td {
     padding: 10px;
     text-align: left;
@@ -610,16 +552,14 @@ addArticle
     height: 150px;
     resize: vertical;
 }
-
 /* 
 ----------
 - LOGIN PAGE
 -----------
 */
-.login {
+.login{
     width: 100%;
 }
-
 .login .signin form table {
     width: 40%;
     margin-left: auto;
@@ -630,31 +570,28 @@ addArticle
     border-radius: 40px 0 40px 0;
     padding: 30px;
 }
-
-.login .signin form table tr td {
+.login .signin form table tr td{
     padding: 15px;
 }
 
-.login .signin form table tr .imgs {
+.login .signin form table tr .imgs{
     border: none;
     background-color: white;
 }
 
-.login .signin form table tr .log {
+.login .signin form table tr .log{
     width: 100%;
     background-color: #237db5;
     cursor: pointer;
     border: none;
 }
-
-.login .signin form table input {
+.login .signin form table input{
     width: 95%;
     padding: 5px;
     background-color: #eee;
     border: none;
     border-bottom: 2px solid green;
 }
-
 /* 
 --------------------------
 - dashbord Global
@@ -688,10 +625,9 @@ addArticle
     cursor: pointer;
 }
 
-.dashbord .nav-left .nav-act {
+.dashbord .nav-left .nav-act{
     background-color: #626262;
 }
-
 /* 
 -----------------
 - article management
@@ -723,7 +659,6 @@ addArticle
 .article-manag .show-article table thead tr .action {
     width: 25%;
 }
-
 .article-manag .show-article table tbody tr td {
     border-bottom: 1px solid #8b8b8b;
 }
@@ -734,14 +669,12 @@ addArticle
     cursor: pointer;
     padding: 10px;
 }
-
 .article-manag .show-article table tbody tr .btn-accept {
     background-color: rgb(12, 169, 12);
     border: none;
     cursor: pointer;
     padding: 10px;
 }
-
 .article-manag .show-article table tbody tr .btn-times {
     background-color: red;
     border: none;
@@ -763,7 +696,6 @@ addArticle
     background-color: rgb(255, 187, 187);
     color: red;
 }
-
 /* 
 ----------------------
 - users management dashbord
@@ -773,16 +705,13 @@ addArticle
     margin-left: 50vh;
     margin-top: 5vh;
 }
-
-.users-manag form {
+.users-manag form{
     display: none;
 }
-
-#h1 {
+#h1{
     cursor: pointer;
     color: blue;
 }
-
 .users-manag form table tr td {
     padding: 20px;
 }
@@ -818,10 +747,9 @@ addArticle
 }
 
 
-.AllUsre .show-users h1 {
+.AllUsre .show-users h1{
     color: #237db5;
 }
-
 .AllUsre .show-users table {
     width: 150vh;
     text-align: center;
@@ -852,7 +780,6 @@ addArticle
     cursor: pointer;
     padding: 10px;
 }
-
 .AllUsre .show-users table tbody tr .btn-edit {
     background-color: rgb(255, 119, 0);
     border: none;

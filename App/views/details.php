@@ -10,6 +10,10 @@ session_start();
 	}
     $Comment = new ArticleController();
     $resComment=$Comment->getAllComment();
+    
+    $data2 = new ArticleController();
+    $res=$data2->getInfoUser();
+
 ?>
 
 <nav>
@@ -17,10 +21,12 @@ session_start();
         <a href="#"><img src="<?php echo BASE_URL;?>App/views/images/Blog.jpg" alt="logo"></a>
         <ul>
             <li><a href="<?php echo BASE_URL ?>blog" class="active">Blog</a></li>
+            <li><a href="<?php echo BASE_URL ?>administrator-users">administrator</a></li>
         </ul>
-        <!-- <a href="#" class="butt">Sign in</a> -->
+        <a href="<?php echo BASE_URL ?>administrator-users" class="info-nav"><?php echo $res['fname']." ".$res['lname']." ";?><i class="fa fa-user" aria-hidden="true"></i></a>
     </div>
 </nav>
+
 <div class="Details">
     
     <div class="title">
@@ -42,13 +48,10 @@ session_start();
                 </tr>
                 <tr>
                     <input type="hidden" name='idd' value="<?= $resultat->id_article ?>">
-                    <td><input type="text" name="name" placeholder='Enter your full name (mandatory) *'></td>
-                </tr>
-                <tr>
                     <td><textarea name="content" placeholder="Enter your comment ..."></textarea></td>
                 </tr>
                 <tr>
-                    <td><input type="submit" name="submit" value="Send Comment" class="sub" disabled></td>
+                    <td><input type="submit" name="submit" value="Send Comment" class="sub" ></td>
                 </tr>
             </table>
         </form>
@@ -59,7 +62,7 @@ session_start();
             <div class="info-users">
                 <img src="<?php echo BASE_URL;?>App/views/images/User.png" alt="user">
                 <div class="inf">
-                    <h2><?php echo $key["full_name"];?></h2>
+                    <h2><?php echo $key["fname"]." ".$key['lname'];?></h2>
                     <p><?php echo $key["date_comment"];?></p>
                 </div>
             </div>
